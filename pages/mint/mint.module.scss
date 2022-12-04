@@ -1,0 +1,125 @@
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.dashOutter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 600px;
+    background: linear-gradient(91.47deg, #fd71d3 37.5%, #8b59ff 71.33%);
+}
+
+.dashInner {
+    display: flex;
+    width: 99%;
+    height: 99%;
+    background: black;
+}
+
+.leftImage {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    background-color: #8b59ff;
+    background-image: url("/bg.png");
+    object-fit: cover;
+}
+
+.rightImage {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    background-color: black;
+    align-items: center;
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 150%;
+        background: linear-gradient(91.47deg, #fd71d3 37.5%, #8b59ff 71.33%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    p {
+        margin-bottom: 8px;
+        font-style: italic;
+    }
+    input {
+        background: #222222;
+        border: 1px solid #7d7d7d;
+        border-radius: 8px;
+        width: 400px;
+        height: 48px;
+        font-style: italic;
+        color: white;
+        padding: 0 8px;
+        font-size: 16px;
+    }
+}
+
+.btn {
+    border: 1.5px solid #8b59ff;
+    outline: none;
+    background: transparent;
+    width: fit-content;
+    color: white;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 10px 15px;
+    min-width: 100px;
+    margin-top: 40px;
+    border-radius: 12px;
+}
+
+.upload {
+    display: flex;
+    width: 70%;
+    background: #222222;
+    border-radius: 8px;
+    min-width: 500px;
+    height: 246px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    input {
+        opacity: 0;
+    }
+
+    img {
+        height: 60px;
+    }
+
+    .preview {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    
+    }
+}
